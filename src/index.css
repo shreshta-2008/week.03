@@ -1,0 +1,59 @@
+/* index.css */
+:root {
+  /* Magical Gold and Parchment Palette */
+  font-family: 'Cinzel', 'Georgia', serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #e2c08d;
+  background-color: #050208;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: block; /* Changed from flex to allow normal scrolling */
+  min-width: 320px;
+  min-height: 100vh;
+  /* Ensure the background from App.css covers everything */
+}
+
+a {
+  font-weight: 500;
+  color: #d4af37;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #d4af37;
+}
+
+button {
+  border-radius: 4px;
+  border: 1px solid #8e7953;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Cinzel', serif;
+  background-color: #2a1b3d;
+  color: #e2c08d;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #3d2b56;
+  border-color: #d4af37;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
